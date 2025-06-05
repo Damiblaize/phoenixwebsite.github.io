@@ -92,7 +92,7 @@ body {
 
 .side-button {
   justify-content: center;
-  font-family: Verdana, Geneva, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-top: 30px;
   
 }
@@ -113,6 +113,7 @@ body {
   color: linear-gradient(237.49deg, #BD3A08 30.54%, #FF840B 68.06%);
 color: linear-gradient(237.49deg, #BD3A08 30.54%, #FF840B 68.06%) !important;
   background-color: var(--bs-btn-bg)
+
 }
 
 
