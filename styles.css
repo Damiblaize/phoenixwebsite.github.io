@@ -256,10 +256,11 @@ font-weight: bold;
   margin: 0 auto 3rem;
   color: #bbb;
   font-family: Roboto;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  text-align: center;
+ 
+  text-align:center ;
 }
 
 .cards-main {
