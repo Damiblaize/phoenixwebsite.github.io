@@ -36,13 +36,27 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   // FAQ toggle
-  const faqs = document.querySelectorAll('.faq');
-  faqs.forEach((faq) => {
-    faq.addEventListener('click', () => {
-      faqs.forEach(f => f.classList.remove('active'));
-      faq.classList.toggle('active');
+   document.querySelectorAll('.faq-item').forEach(item => {
+      const question = item.querySelector('.question');
+      const toggle = item.querySelector('.toggle');
+  
+      question.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+  
+        // Close all FAQs
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('open');
+          const t = i.querySelector('.toggle');
+          if (t) t.textContent = '+';
+        });
+  
+        // Toggle current
+        if (!isOpen) {
+          item.classList.add('open');
+          if (toggle) toggle.textContent = '−';
+        }
+      });
     });
-  });
 });
 
    
